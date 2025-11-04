@@ -10,7 +10,7 @@ local math_sqrt = math.sqrt
 local math_abs = math.abs
 local math_min = math.min
 local math_max = math.max
-local math_huge = math.huge
+local math_maxinteger = math['maxinteger'] or 9007199254740991
 
 local vec = {}
 
@@ -238,8 +238,8 @@ end
 ---@param brushes [table]
 ---@return { x:number, y:number, z:number } center
 function vec.get_brushes_center(brushes)
-  local min = { x = math_huge, y = math_huge, z = math_huge }
-  local max = { x = -math_huge, y = -math_huge, z = -math_huge }
+  local min = { x = math_maxinteger, y = math_maxinteger, z = math_maxinteger }
+  local max = { x = -math_maxinteger, y = -math_maxinteger, z = -math_maxinteger }
 
   -- Go through all brushes and faces to find min and max vertice coordinates
   for _, brush in pairs(brushes) do
