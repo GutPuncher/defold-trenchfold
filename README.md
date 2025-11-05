@@ -50,7 +50,7 @@ With the project open in Defold, right click on the [level.map](https://github.c
 ## Install
 
 1. Add link to the zip-archive of the latest version of [defold-trenchfold](https://github.com/astrochili/defold-trenchfold/releases) to your Defold project as [dependency](http://www.defold.com/manuals/libraries/).
-2. Copy the `trenchfold/assets/trenchbroom/games/Defold` folder according [this instruction](https://trenchbroom.github.io/manual/latest/#game_configuration_files) to TrenchBroom user data folder.
+2. Copy the [`trenchfold/assets/trenchbroom/games/Defold`](trenchfold/assets/trenchbroom/games/Defold) folder according [this instruction](https://trenchbroom.github.io/manual/latest/#game_configuration_files) to TrenchBroom user data folder.
 3. Set your game project path as the game path in TrenchBroom preferences when creating the first map.
 4. Setup `textel_size` and `material` in the [worldspawn](#worldspawn) entity.
 
@@ -62,7 +62,7 @@ Find your `.map` file in the resources pane of the editor and right click on it 
 
 ### Lua Module
 
-There is also the `trenchfold/cli.lua` module to run the import script outside the editor. Just pass it two arguments - `relative/map_folder` and `map_name`.
+There is also the [`trenchfold/cli.lua`](trenchfold/cli.lua) module to run the import script outside the editor. Just pass it two arguments - `relative/map_folder` and `map_name`.
 
 ### VS Code
 
@@ -70,7 +70,7 @@ There is a working example of launch configuration in [`.vscode/launch.json`](.v
 
 ### TrenchBroom
 
-You can create a [compilation profile](https://trenchbroom.github.io/manual/latest/#compiling_maps) inside TrenchBroom with the `Run Tool` step to run [cli.lua](#lua-module). Requires Lua or LuaJIT to be installed on your computer.
+You can create a [compilation profile](https://trenchbroom.github.io/manual/latest/#compiling_maps) inside TrenchBroom with the `Run Tool` step to run [Lua module](#lua-module). Requires Lua or LuaJIT to be installed on your computer.
 
 ## Textures
 
